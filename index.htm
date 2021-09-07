@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="Header">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid d-block">
+                <div class="row w-100 d-flex justify-content-between">
+                    <a class="navbar-brand col" href="#">
+                    </a>
+                    <div class="col">
+                        <form class="d-flex p-0 w-100">
+                            <button class="btn nav-icon-search" type="submit"></button>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="col btn-header d-flex justify-content-end">
+                        <button class="navbar-toggler menu-btn p-0" id="menu-btn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="menu-btn-ham1"></div>
+                            <div class="menu-btn-ham2"></div>
+                            <div class="menu-btn-ham3"></div>
+                        </button>
+                        <button class="btn btn-cart1 w-auto">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                <img src="./assets/cart.PNG" alt="carrito de compras">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col d-flex pt-1 justify-content-between align-items-center">
+                        <div class="send">
+                            <button class="btn send-btn">
+                                <a href="#"><img src="./assets/send.PNG" alt="logo de locacion"></a>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <div class="menu-search">
+                                <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item dropdown categories">
+                                        <a class="nav-link dropdown-toggle " href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Categoria
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">Vehículos</a></li>
+                                            <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ofertas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Historial</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Supermercado</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Moda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Vender</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ayuda</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-user">
+                                <ul class="navbar-nav me-auto my-2 my-lg-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/user.PNG" alt="">
+                                            Name User
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Mis
+                                            compras</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Favoritos
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                            <img src="./assets/notif.PNG" alt="campana de notificaciones">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                            <img src="./assets/cart.PNG" alt="carrito de compras">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+
+    </header>
+    <section class="Hero"></section>
+    <section class="Piment-options"></section>
+    <section class="Carrousel"></section>
+    <footer class="Footer"></footer>
+
+    <script src="./index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
