@@ -9,24 +9,26 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="Header">
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid d-block">
-                <div class="row w-100 d-flex justify-content-between">
+                <div class="row w-100 d-flex justify-content-between header-top">
                     <a class="navbar-brand col" href="#">
                     </a>
                     <div class="col">
                         <form class="d-flex p-0 w-100">
                             <button class="btn nav-icon-search" type="submit"></button>
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar Productos"
+                                aria-label="Search">
                         </form>
                     </div>
                     <div class="col btn-header d-flex justify-content-end">
@@ -44,14 +46,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="row w-100">
+                <div class="row w-100 pt-2">
                     <div class="col d-flex pt-1 justify-content-between align-items-center">
-                        <div class="send">
+                        <div class="send pt-2">
                             <button class="btn send-btn">
                                 <a href="#"><img src="./assets/send.PNG" alt="logo de locacion"></a>
                             </button>
                         </div>
-                        <div class="collapse navbar-collapse" id="navbarScroll">
+                        <div class="collapse navbar-collapse p-0 pl-3" id="navbarScroll">
                             <div class="menu-search">
                                 <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
                                     <li class="nav-item dropdown categories">
@@ -103,7 +105,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Mis
+                                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Mis
                                             compras</a>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -121,12 +123,12 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">
                                             <img src="./assets/notif.PNG" alt="campana de notificaciones">
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">
                                             <img src="./assets/cart.PNG" alt="carrito de compras">
                                         </a>
                                     </li>
@@ -141,13 +143,489 @@
         </nav>
 
     </header>
-    <section class="Hero"></section>
-    <section class="Piment-options"></section>
-    <section class="Carrousel"></section>
+    <section class="Hero">
+        <div id="carouselExampleIndicators" class="carousel slide h-75" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/hero-1.webp" class="d-block w-100" alt="25 porciento de descuento en celulares">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/hero-2.webp" class="d-block w-100" alt="ultimo dia de descuento">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/hero-3.webp" class="d-block w-100"
+                        alt="descuento del 30 porciento en electrodomesticos">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="Payment-options"></section>
+    <section class="last-visit products pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6">
+                    <h3 class="mb-3">Basado en tu última visita </h3>
+                    <a href="#">Ver historial</a>
+                </div>
+                <div class="btn-products col col-md-10 d-flex justify-content-between">
+                    <a class="btn btn-product mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
+                        data-slide="prev">
+                        <i class="fa fa-arrow-left">
+                            < </i>
+                    </a>
+                    <a class="btn btn-product mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right">></i>
+                    </a>
+                </div>
+                <div class="col-12 mt-4">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel"
+                        data-interval="false">
+
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/last-visit2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-products products pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6">
+                    <h3 class="mb-3">Para el hogar </h3>
+                    <a href="#">Ver historial</a>
+                </div>
+                <div class="btn-products col col-md-10 d-flex justify-content-between">
+                    <a class="btn btn-product mb-3 mr-1" href="#carouselExampleIndicators3" role="button"
+                        data-slide="prev">
+                        <i class="fa fa-arrow-left">
+                            < </i>
+                    </a>
+                    <a class="btn btn-product mb-3 " href="#carouselExampleIndicators3" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right">></i>
+                    </a>
+                </div>
+                <div class="col-12 mt-4">
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel"
+                        data-interval="false">
+
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/home2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offers products pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6">
+                    <h3 class="mb-3">Ofertas </h3>
+                    <a href="#">Ver todas</a>
+                </div>
+                <div class="btn-products col col-md-10 d-flex justify-content-between">
+                    <a class="btn btn-product mb-3 mr-1" href="#carouselExampleIndicators4" role="button"
+                        data-slide="prev">
+                        <i class="fa fa-arrow-left">
+                            < </i>
+                    </a>
+                    <a class="btn btn-product mb-3 " href="#carouselExampleIndicators4" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right">></i>
+                    </a>
+                </div>
+                <div class="col-12 mt-4">
+                    <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel"
+                        data-interval="false">
+
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale1.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 2.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale3.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 1.500</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card ">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="./assets/sale2.webp">
+                                            <div class="card-body">
+                                                <h4 class="card-title">$ 3.000</h4>
+                                                <p class="card-text">With supporting text below as a natural lead-in
+                                                    to additional content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="Footer"></footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./index.js"></script>
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
