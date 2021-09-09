@@ -236,9 +236,11 @@ body{
   overflow: hidden;
 }
 .btn-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
-  line-height: 20px;
   font-size: 2rem;
   background-color: white;
   color: var(--ml-blue);
@@ -373,7 +375,7 @@ i:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: var(--ml-blue);
   color: white;
   width: 2rem;
