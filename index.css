@@ -16,6 +16,9 @@ html {
   color: var(--ml-gray-dark);
   background-color: var(--ml-gray);
 }
+body{
+  background-color: var(--ml-gray) !important;
+}
 /* Header */
 .Header .container-fluid {
   max-width: 1200px;
@@ -65,12 +68,17 @@ html {
   color: var(--ml-gray-dark);
 }
 .navbar-toggler:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 .btn-header {
+  position: relative;
   width: 80px !important;
   max-width: 80px !important;
   padding: 0 !important;
+}
+.btn-header .logo-devrock {
+  position: absolute;
+  display: none;
 }
 .menu-btn {
   position: relative;
@@ -203,92 +211,197 @@ html {
 /* Hero */
 
 /* /Hero */
-/* last visit */
+/* Products */
 .products {
-    position: relative;
-    background-color: var(--ml-gray);
+  position: relative;
+  background-color: var(--ml-gray);
 }
 .products h3 {
-    display: inline;
-    font-size: 1.5rem;
-    font-weight: 100;
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 .products a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--ml-blue);
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--ml-blue);
 }
 .btn-products {
-    position: absolute;
-    top: 50%;
-    z-index: 1000;
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
 }
 .products .carousel-item {
-    max-height: 330px;
-    overflow: hidden;    
+  max-height: 330px;
+  overflow: hidden;
 }
-.btn-product{
-    width: 30px;
-    height: 30px;
-    line-height: 20px;
-    font-size: 2rem;
-    background-color: white;
-    color: var(--ml-blue);
-    border-radius: 50%;
-    box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.555);
+.btn-product {
+  width: 30px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 2rem;
+  background-color: white;
+  color: var(--ml-blue);
+  border-radius: 50%;
+  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.555);
 }
-.btn-product:focus{
-    box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.555) !important;
+.btn-product:focus {
+  box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.555) !important;
 }
-i:active{
-    color: var(--ml-blue);
+i:active {
+  color: var(--ml-blue);
+}
+.products .card-container {
+  min-width: 210px;
 }
 .products .card {
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-background-color: white;
-margin-bottom: 10px;
-border-radius: 8px;
-height: 330px;
-transform: scale(0.9);
-transition: 0.2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  min-width: 210px;
+  height: 330px;
+  transform: scale(0.8);
+  transition: 0.2s;
 }
-.products .card:hover{
-    transform: scale(1);
-    box-shadow: 5px 1px 12px 0 rgba(51, 51, 51, 0.555);
+.products .card:hover {
+  transform: scale(0.9);
+  box-shadow: 5px 1px 12px 0 rgba(51, 51, 51, 0.555);
 }
 .products .card img {
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 70%;
-    max-width: 200px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 200px;
 }
 .products .card-body {
-    height: 120px;
-    max-height: 120px !important;
-    border-top: solid 1px var(--ml-gray);
+  height: 120px;
+  max-height: 120px !important;
+  border-top: solid 1px var(--ml-gray);
 }
 .products .card-title {
-    font-size: 2rem;
-    font-weight: normal;
+  font-size: 2rem;
+  font-weight: normal;
 }
 .products .card-text {
-    font-weight: 100;
+  font-weight: 100;
 }
+/* /Products */
+/* Payment-optioons */
+.Payment-options {
+  background-color: var(--ml-gray);
+}
+.Payment-options .payment__card-container  {
+  position: relative;
+  margin-bottom: 2px;
+  padding-right: 80px;
+  overflow: hidden;
+  max-height: 80px;
+}
+.payment__card, .payment__btn {
+  display: flex;
+  align-items: center;
+  min-width: 220px;
+  height: 80px;
+  background-color: white;
+  padding: 0;
+}
+.payment__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  border-left: 1px solid var(--ml-gray);
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+}
+.payment__card-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.payment__card-icon .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--ml-gray);
+  overflow: hidden;
+}
+.payment__card-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column; 
+  padding-left: 1rem;
+}
+.payment__card-text h4 {
+  font-weight: normal;
+  margin: 0;
+}
+.payment__card-text a {
+  text-decoration: none;
+  color: var(--ml-blue);
+}
+.payment__card-btn{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.payment__card-btn .btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--ml-gray);
+}
+.payment__card-btn .btn-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: var(--ml-blue);
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+}
+/* /Payment-optioons */
+/* Footer */
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  border-top: 1px solid var(--ml-gray);
+  height: auto;
+}
+/* /Footer */
 @media (min-width: 992px) {
-    .navbar-collapse {
-        transform: translate(-21px, 8rem);
-    }
-    .products h3 {
-        font-size: 2rem;
-    }
-    .products a {
-        font-size: 1.5rem;
-    }
+  .navbar-collapse {
+    transform: translate(-21px, 8rem);
+  }
+  .products h3 {
+    font-size: 2rem;
+  }
+  .products a {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .navbar-brand {
@@ -325,5 +438,8 @@ transition: 0.2s;
   }
   .btn-cart2 {
     display: inline;
+  }
+  .btn-header .logo-devrock {
+    display: block;
   }
 }
